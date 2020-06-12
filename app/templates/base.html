@@ -3,13 +3,22 @@
     <head>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
       {% if title %}
-      <title>Jason Chang</title>
+      <title>Jason Chang - {{ title }}</title>
       {% else %}
       <title>Jason Chang</title>
       {% endif %}
       
     </head>
     <body>
+        <div class="dropdown" style="float:left;">
+            <button class="dropbtn">Navigation</button>
+            <div class="dropdown-content" style="left:0;">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('about_me') }}">About Me</a>
+                <a href="{{ url_for('resume') }}">Resume</a>
+                <a href="{{ url_for('contact_info') }}">Contact Info</a>
+            </div>
+        </div>
         {% block content %}
         
         
