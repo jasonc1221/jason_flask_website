@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<h1>Resume</h1>
+<!-- EDUCATION SECTION -->
+<div class="col-3"><h3>Education</h3></div>
+<div class="ResumeSegment" id="CPP">
+    <div class="col-3">
+        <p class="ResumeTitle">California State Polytechnic University, Pomona</p>
+        <p class="ResumeCompany"></p>
+        <p class="ResumeLocation"></p>
+        <p class="ResumeDate">May 2019</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <div>Major: Computer Engineering, B.S.</div><br>
+            <div>Relevant Courses: C for Engineers, Object Oriented Programming, Data Structures for Engineers,
+                Intro to Microcontrollers, Robotics, Microprocessor, Computer Architecture, OS for Embedded
+                Applications</div><br>
+            <div>Clubs: CPP AI, Institute of Electrical and Electronics Engineers, CPP Tennis Club (Treasurer).
+            </div>
+        </ul>
+    </div>
+    <br>
+</div>
+<hr>
+
+<!-- WORK EXPERIENCE SECTION -->
+<div class="col-3"><h3>Work Experience</h3></div>
+<div class="ResumeSegment" id="TCS">
+    <div class="col-3">
+        <p class="ResumeTitle">Software Engineer</p>
+        <p class="ResumeCompany">Tata Consultancy Services</p>
+        <p class="ResumeLocation">Woodland Hills, CA</p>
+        <p class="ResumeDate">June 2019 – Current</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Automated full reports to check servers’ status and collect data using Python Selenium. Data was
+                written into excel sheet and inserted into SQL database.</li>
+            <li>Designed and implemented tools for development team.</li>
+            <li>Applied computer vision in programs to detect and flag errors from screenshots. </li>
+            <li>Created self-healing applications to reduce downtime and increase operational throughput.</li>
+            <li>Utilized Jupyter Notebook to parse and manipulate data in log files from SoapUI responses.</li>
+        </ul>
+    </div>
+    <br>
+</div>
+<div class="ResumeSegment" id="NorthropGumman">
+    <div class="col-3">
+        <p class="ResumeTitle">College Technical Intern</p>
+        <p class="ResumeCompany">Northrop Grumman</p>
+        <p class="ResumeLocation">Redondo Beach, CA</p>
+        <p class="ResumeDate">June 2018 – August 2018</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Built a server implementing firmware updates, RAID 10 virtual disks, and OS Deployment.</li>
+            <li>Executed and submitted the appropriate workflows matching customer’s requests to manage a Virtual
+                Testing Environment.</li>
+            <li>Worked with existing documents, provided updates to name changes, and looked for areas of
+                opportunity to clean up language and better present technical information to customers.</li>
+        </ul>
+    </div>
+    <br>
+</div>
+<div class="ResumeSegment" id="CPPIT">
+    <div class="col-3">
+        <p class="ResumeTitle">IT Student Assistant</p>
+        <p class="ResumeCompany">Cal Poly Pomona</p>
+        <p class="ResumeLocation">Pomona, CA</p>
+        <p class="ResumeDate">April 2016 – May 2019</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Provided tier 1 support: password, email, group account, walk-in, callback, wireless, VPN, etc.
+            </li>
+            <li>Troubleshooted Pharos Print station issues: money, receipt, toner, billing system Cbord server.</li>
+            <li>Managed Incident and Request Tickets (ServiceNow) for staff and professors.</li>
+        </ul>
+    </div>
+    <br>
+</div>
+<hr>
+
+<!-- PROJECTS SECTION -->
+
+<div class="col-3"><h3>Projects</h3></div>
+<div class="ResumeSegment" id="PersonalWebsite">
+    <div class="col-3">
+        <p class="ResumeTitle">Personal Website</p>
+        <p class="ResumeCompany"></p>
+        <p class="ResumeLocation"></p>
+        <p class="ResumeDate">September 2019 – November 2019</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Designed and developed a website using HTML, CSS, Bootstrap, JavaScript, and ReactJS.</li>
+            <li>Created CSS template working with CSS Background, positioning, text, margin, and padding.</li>
+            <li>Maintained states in the stores and dispatched the actions using redux.</li>
+            <li>Utilized AWS Services S3, VPC, Cloudfront, Route53, Certificate Manager to deploy and host with
+                custom domain.</li>
+        </ul>
+    </div>
+    <br>
+</div>
+<div class="ResumeSegment" id="CPPAITensorFlow">
+    <div class="col-3">
+        <p class="ResumeTitle">CPPAI TensorFlow Speech to Text</p>
+        <p class="ResumeCompany"></p>
+        <p class="ResumeLocation"></p>
+        <p class="ResumeDate">May 2018 – May 2019</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Modeled Speech to Text TensorFlow program with low label error rate on small data sets.</li>
+            <li>Researched academic papers to make optimal STT model: Bidirectional LSTM RNN with CTC Loss.</li>
+            <li>Preprocessed speech data to necessary format required in order to implement data into model.</li>
+        </ul>
+    </div>
+    <br>
+</div>
+<div class="ResumeSegment" id="BluetoothArduino">
+    <div class="col-3">
+        <p class="ResumeTitle">Bluetooth Arduino RC Car with Arm</p>
+        <p class="ResumeCompany"></p>
+        <p class="ResumeLocation"></p>
+        <p class="ResumeDate">September 2017</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Assembled a RC Car and 3D printed robot arm controlled via smartphone Bluetooth.</li>
+            <li>Controlled RC Car and arm with Bluetooth signal received through Arduino microcontroller.</li>
+            <li>Designed and developed an app with Android Studio to connect and communicate to Arduino.</li><a
+                class="App-link" href="https://www.youtube.com/watch?v=jmNElQp-yrc">Click Here for Demo</a>
+        </ul>
+    </div>
+    <br>
+</div>
+<div class="ResumeSegment" id="IoT">
+    <div class="col-3">
+        <p class="ResumeTitle">IoT Smart Lock</p>
+        <p class="ResumeCompany"></p>
+        <p class="ResumeLocation"></p>
+        <p class="ResumeDate">June 2017</p>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>Built an IoT Smart Lock that levers a dead bolt using a servo controlled via smartphone.</li>
+            <li>Programmed Particle Photon microcontroller to move the servo using C# in Particle IDE.</li>
+            <li>Designed and developed an app with Android Studio using XML and Java.</li>
+            <li>Remotely connected the app to the Particle Cloud allowing execution of the microcontroller program.
+            </li>
+        </ul>
+    </div>
+    <br>
+</div>
+{% endblock %}
