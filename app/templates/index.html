@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 
-{% block content %}
-    <head>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    </head>
+{% block app_content %}
+<h1>Jason Chang</h1>
 
-    <h1>Jason Chang</h1>
-    <h2>Age: {{ age }}</h2>
-    
+<div class="AboutMeSegment" id="Profile">
+    <div class="AboutMeDetails" id="ProfileDetails">
+        <div class="col-md-4">Hello, my name is Jason Chang, and I am a Software Engineer at System1. My main coding language is Python.
+            I am interested in Machine Learning and would like to pursue a carreer in that field.
+        </div>
+        <div class="col-md-4"><img id="ProfilePic" src="/static/asset/ProfilePic.jpg" alt="A smiling Jason Chang">
+        </div>
+        <div class="col-md-4">
+            <p>Age: {{ age }} Years<br>Location: Los Angeles, California</p>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
